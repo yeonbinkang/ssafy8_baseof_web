@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 가로=row=행 , 세로=column=열 */
+        .wrapper{
+            background-color: moccasin;
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            align-items: center;
+            justify-content: space-around;
+            /* space-around하면 요소를 적당한 간격으로 띄워줌:아래위의 간격역시 일정함
+                space-between 아래위는 간격 없이 요소들 사이만 적당한 간격으로 띄워줌, 박스사이즈도 줄어든다.. */
+            /* 화면이 거대할때 정중앙에 딱 놓을 수가 있음 */
+        }
+        .box{
+            width: 80px;
+            height: 80px;
+            border: 1px solid sienna;
+            background-color: aquamarine;
+        }
+        .a{
+            flex: 1;
+            background-color: blue;
+
+        }
+        .b{
+            flex: 3;
+            background-color: blueviolet;
+
+        }
+        .c{
+            flex: 2;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- 자식 클래스 안에서도 걔들 이름 바꿀 수 있음 그럼 박스로 받고, a로 받음 -->
+        <div class="box a"></div>
+        <div class="box b"></div>
+        <div class="box c"></div>
+</body>
+</html>

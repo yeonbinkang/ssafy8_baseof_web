@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .link-test{
+            border: 1px solid palevioletred;
+            /* height: 10000000000000px; 해봤자 안먹힘*/
+        }
+
+        .h1-test{
+            border: 1px solid darkblue;
+            height: 100px;
+            width: 100px;
+        }
+        button {
+            border: 20px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 줄바꿈이 일어나지 않으면 인라인이다.인라인은 크기 조정 불가능
+        마진, 패딩역시 조절 불가능// 대표적으로 a tag 가 있다. -->
+    
+
+    <!-- alt+마우스 클릭 다중커서 -->
+    <a class="link-test" href="">fffff</a>
+    <a class="link-test" href="">fffff</a>
+    <!-- 대표적인 블록은 h1 tag 크기 변경 가능하고 한 줄 자체를 차지함-->
+    <h1 class="h1-test">랄랄라</h1>
+    <h1 class="h1-test">호호호</h1>
+    <!-- 인라인 블록은 button 블록처럼 크키 조절 가능하고 인라인처럼 줄바꿈 일어나지 않음 -->
+    <button>나를 클릭해~~~~~</button>
+</body>
+</html>

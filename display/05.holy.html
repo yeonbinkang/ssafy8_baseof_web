@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .warrper{
+            height: 100px;
+            
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .warrper1{
+
+            height: 80pt;
+
+            display: flex;
+            flex-direction: row;
+        
+
+        }
+        .box{
+            height: 80px;
+            border: 0.5px solid black;
+            display:flex;
+
+        }
+        .a{
+            flex:1;
+        }
+        .b{
+            flex:8;
+        }
+        .c{
+            flex:3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="warrper">
+        <div class="box a"></div>
+        <div class="warrper1 box b">
+            <div class="box a"></div>
+            <div class="warrper box c">
+                <div class="box a"></div>
+                <div class="box a"></div>
+                <div class="box b"></div>
+                <div class="box a"></div>
+            </div>
+            <div class="box a"></div>
+
+        </div>
+        <div class="box a"></div>
+    </div>
+ 
+</body>
+</html>

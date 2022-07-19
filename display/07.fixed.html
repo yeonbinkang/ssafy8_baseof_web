@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test1, .test2{
+            border: 1px solid black;
+        }
+        .container{
+            height: 1200px;
+            border: 10px solid darkcyan;
+        }
+        .test1{
+            position: fixed;
+            /* fixed로 선언하는 순간 다른 영역을 갖는다고 생각해야함 부모 영향도 안받음 */
+            width: 100%
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="test1">test1</div>
+        <div class="test2">test2</div>
+    </div>
+    
+</body>
+</html>
+    

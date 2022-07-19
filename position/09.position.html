@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .grand-parents,
+    .parents,
+    .child{
+      border: 1px solid black;
+    }
+      
+    .child{
+      /* position:absolute */
+      /* top :10px   static이 아닌 부모가 기준이다.(밑에서 부터 올라갔을때 맨 처음 만나는 부모)*/
+      /* position: static; 위치를 움직일수 없다*/
+      position: relative;
+      /* 부모에 상대적이다 */
+      left: 100px;
+
+      /* 부모가 나에게 할당해준 위치를 기준으로 상대적으로 왼쪽에 공백 100픽셀 준다 */
+      /* left right top bottom 사용가능 */
+      /* 부모의 영역은 정해져 있고 자식은 그 안쪽에 위치를 할당 받는다 */
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <div class="grand-parents">
+    할배
+    <div class="parents">
+      아빠
+      <div class="child">
+        나
+      </div>
+    </div>
+  </div>
+</body>
+</html>
