@@ -1,2 +1,4 @@
-const btn = document.createElement("button");
-console.log(btn);
+
+const navNames = document.querySelectorAll(".nav_item");
+
+
