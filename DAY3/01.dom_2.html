@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button class="sample-btn">나를 클릭해~~
+
+  </button>
+  <script>
+    function showAlert() {
+      alert("라뷰~");
+    }
+
+    const sampleBtn = document.querySelector(".sample-btn");
+    // call back 함수는 특정한 조건을 만족시키지 않으면 실행되지 않는 함수이다.
+
+    sampleBtn.addEventListener("click", showAlert)
+  </script>
+</body>
+
+</html>
